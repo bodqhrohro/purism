@@ -1,0 +1,1 @@
+Ukrainian purification meme templates

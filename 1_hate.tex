@@ -1,0 +1,138 @@
+\documentclass{minimal}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\paperwidth=32cm
+\paperheight=18cm
+\topmargin=-1in
+\oddsidemargin=-1in
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{fontspec}
+\setmainfont{Lobster}
+\begin{document}
+\noindent
+\includegraphics{res/3gxr6y.jpg}
+
+\begin{textblock*}{15cm}(8.5cm,2cm)
+\fontsize{20pt}{22pt}\selectfont
+\begin{tikzpicture}[
+  parent anchor=east,
+  child anchor=west,
+  grow=east,
+  level distance=1em
+]
+\tikzset{line/.style={draw, -triangle 45}}
+\node[matrix,row sep=.5em](m) {
+\node(eng1) {h}
+  child {node(eng2) {a}
+  child {node(eng3) {t}
+  child {node(eng4) {e}
+}}}; \\
+\node(oe1) {h}
+  child {node(oe2) {a}
+  child {node(oe3) {t}
+  [level distance=1.5em]
+  child {node(oe4) {ia}
+  child {node(oe5) {n}
+}}}}; \\
+\node(pwg1) {*h}
+  [level distance=1.6em]
+  child {node(pwg2) {a}
+  child {node(pwg3) {t}
+  child {node(pwg4) {\={e}}
+  child {node(pwg5) {n}
+}}}}; \\
+\node(pg1) {*h}
+  [level distance=1.6em]
+  child {node(pg2) {a}
+  child {node(pg3) {t}
+  child {node(pg4) {\={a}}
+  child {node(pg5) {n}
+  child {node(pg6) {\k{a}}
+}}}}}; \\
+\node(pgc1) {*h}
+  [level distance=1.6em]
+  child {node(pgc2) {a}
+  child {node(pgc3) {t}
+  child {node(pgcaz) {az}
+  child {node(pgcplus) {+}
+  child {node(pgc4) {*\={a}n\k{a}} edge from parent[draw=none]
+} edge from parent[draw=none]
+}}}}; \\
+\node(pie1) {*k}
+  [level distance=1.6em]
+  child {node(pie2) {e}
+  child {node(pie3) {h$_2$}
+  [level distance=1.8em]
+  child {node(pie4) {d-}
+}}}; \\
+\node(lpie1) {*k}
+  [level distance=1.6em]
+  child {node(lpie2) {\={a}}
+  [level distance=1.8em]
+  child {node(lpie3) {d-}
+}}; \\
+\node(palat1) {*č}
+  [level distance=1.6em]
+  child {node(palat2) {\={a}}
+  [level distance=1.8em]
+  child {node(palat3) {d-}
+}}; \\
+\node(ukr1) {ч}
+  child {node(ukr2) {а}
+  [level distance=1.8em]
+  child {node(ukr3) {д-}
+}}; \\
+};
+
+\path[line] (oe1) -> (eng1);
+\path[line] (oe2) -> (eng2);
+\path[line] (oe3) -> (eng3);
+\path[line] (oe4) -> (eng4);
+
+\path[line] (pwg1) -> (oe1);
+\path[line] (pwg2) -> (oe2);
+\path[line] (pwg3) -> (oe3);
+\path[line] (pwg4) -> (oe4);
+\path[line] (pwg5) -> (oe5);
+
+\path[line] (pg1) -> (pwg1);
+\path[line] (pg2) -> (pwg2);
+\path[line] (pg3) -> (pwg3);
+\path[line] (pg4) -> (pwg4);
+\path[line] (pg5) -> (pwg5);
+
+\path[line] (pgc1) -> (pg1);
+\path[line] (pgc2) -> (pg2);
+\path[line] (pgc3) -> (pg3);
+\path[line] (pgc4) -> (pg4);
+\path[line] (pgc4) -> (pg5);
+\path[line] (pgc4) -> (pg6);
+
+\path[line] (pie1) -> (pgc1);
+\path[line] (pie2) -> (pgc2);
+\path[line] (pie3) -> (pgc2);
+\path[line] (pie4) -> (pgc3);
+
+\path[line] (pie1) -> (lpie1);
+\path[line] (pie2) -> (lpie2);
+\path[line] (pie3) -> (lpie2);
+\path[line] (pie4) -> (lpie3);
+
+\path[line] (lpie1) -> (palat1);
+\path[line] (lpie2) -> (palat2);
+\path[line] (lpie3) -> (palat3);
+
+\path[line] (palat1) -> (ukr1);
+\path[line] (palat2) -> (ukr2);
+\path[line] (palat3) -> (ukr3);
+
+\end{tikzpicture}
+\end{textblock*}
+\begin{textblock*}{10cm}(3cm,15cm)
+\fontsize{40pt}{42pt}\selectfont гейтити\strut
+\end{textblock*}
+\begin{textblock*}{10cm}(20cm,15cm)
+\fontsize{40pt}{42pt}\selectfont \colorbox{white}{\parbox{9cm}{чадити\strut}}
+\end{textblock*}
+\end{document}
